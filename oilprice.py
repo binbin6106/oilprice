@@ -5,8 +5,8 @@ import requests
 
 
 def getoilprice():
-    showapi_appid = '96301'
-    showapi_sign = 'af5c7c34b82c43b4902eaf2aa70297e3'
+    showapi_appid = 'yourappid'
+    showapi_sign = 'yoursign'
     # prov:
     url = 'http://route.showapi.com/138-46'
     content = {}
@@ -28,8 +28,8 @@ def getoilprice():
 
 
 def serverpush(text):
-    url = 'https://sc.ftqq.com/SCU37292T4696a7b5cb4db8bc991944c1f13b7d485c0bb92524731.send'
-    urlchenyang = 'https://sc.ftqq.com/SCU52362T441a5e86203df6e131a41315d35986cc5cebc8dc8a13f.send'
+    url = 'your url'
+    url2= 'yoururl2'
 
     textmod = {'text': '油价发生了变化', 'desp': text}
     requests.post(url, params=textmod)
