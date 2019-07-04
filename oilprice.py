@@ -34,7 +34,7 @@ def serverpush(text):
     textmod = {'text': '油价发生了变化', 'desp': text}
     requests.post(url, params=textmod)
     time.sleep(1)
-    requests.post(urlchenyang, params=textmod)
+    requests.post(url2, params=textmod)
     # print(req.text)
 
 
